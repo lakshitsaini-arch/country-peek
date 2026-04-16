@@ -9,7 +9,7 @@
 /* Card */
 .card {
   display: block;
-  background-color: #ffffff;
+  background-color: var(--card-bg);
   border-radius: 10px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
   overflow: hidden;
@@ -40,27 +40,27 @@
 .card__name {
   font-size: 1.1rem;
   font-weight: 600;
-  color: #111;
+  color: var(--text);
   margin-bottom: 8px;
 }
 
 /* Card text */
 .card__body p {
   font-size: 0.9rem;
-  color: #666;
+  color: var(--text);
   margin: 4px 0;
 }
 
 /* Label inside text */
 .card__body p span {
   font-weight: 500;
-  color: #333;
+  color: var(--text);
 }
 
 /* Status text (loading / placeholder) */
 .home__status {
   padding: 24px;
-  color: #666;
+  color: var(--text);
 }
 
 /* Error state */
@@ -77,8 +77,8 @@
 
 /* back-btn — white background, border, hover state */
 .back-btn {
-  background: white;
-  border: 1px solid #ddd;
+  background: var(--card-bg);
+  border: 1px solid var(--input-border);
   border-radius: 6px;
   padding: 8px 24px;
   cursor: pointer;
@@ -89,7 +89,8 @@
 }
 
 .back-btn:hover {
-  background: #fdfdfd;
+  background: var(--card-bg);
+  opacity: 0.9;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
   transform: translateY(-2px);
 }
@@ -125,7 +126,8 @@
 /* country-page__official — muted subtitle */
 .country-page__official {
   font-size: 1.1rem;
-  color: #666;
+  color: var(--text);
+  opacity: 0.8;
   margin-bottom: 32px;
 }
 
@@ -156,8 +158,8 @@
 
 /* border-badge — small outlined pill for each border code */
 .border-badge {
-  background: white;
-  border: 1px solid #ddd;
+  background: var(--card-bg);
+  border: 1px solid var(--input-border);
   border-radius: 4px;
   padding: 4px 16px;
   font-size: 0.9rem;
@@ -167,7 +169,7 @@
 /* page-status — padding and muted colour for loading/error text */
 .page-status {
   padding: 24px 0;
-  color: #666;
+  color: var(--text);
   font-size: 1.1rem;
 }
 
