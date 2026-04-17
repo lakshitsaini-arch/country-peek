@@ -119,3 +119,26 @@ body {
   max-width: 1440px;
   margin: 0 auto;
 }
+
+/* Favourite Button Styles */
+.fav-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 0.9rem;
+  padding: 8px 0;
+  color: var(--text);
+  opacity: 0.6;
+  margin-top: 8px;
+  font-weight: 600;
+  transition: color 0.2s ease, opacity 0.2s ease;
+}
+
+.fav-btn:hover {
+  opacity: 1;
+}
+
+.fav-btn--saved {
+  color: #ef4444; /* red or gold tone */
+  opacity: 1;
+}
