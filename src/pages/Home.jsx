@@ -84,6 +84,10 @@ function Home() {
           Start searching to explore countries.
         </p>
       )}
+
+      {!loading && !error && countries.length > 0 && displayed.length === 0 && (
+        <p className="home__status">No countries found for this region.</p>
+      )}
     </div>
   );
 }
