@@ -64,7 +64,7 @@ function CountryPage() {
             <div>
               <p><strong>Population:</strong> {population?.toLocaleString()}</p>
               <p><strong>Region:</strong> {region}</p>
-              <p><strong>Subregion:</strong> {subregion}</p>
+              <p><strong>Subregion:</strong> {subregion ?? 'N/A'}</p>
               <p><strong>Capital:</strong> {capital?.[0] ?? 'N/A'}</p>
             </div>
             <div>
